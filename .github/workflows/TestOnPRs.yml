@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   test:
-    uses: ./.github/workflows/ReusableTest.yml@main
+    uses: ./.github/workflows/ReusableTest.yml
     with:
       os: ubuntu-latest
       version: "1"
