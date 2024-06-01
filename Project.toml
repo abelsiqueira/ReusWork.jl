@@ -1,0 +1,7 @@
+name = "ReusWork"
+uuid = "ba874941-c3a3-5202-a29f-58992f4597fa"
+authors = ["Abel Soares Siqueira <abel.s.siqueira@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1.6"

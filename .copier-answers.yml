@@ -1,0 +1,11 @@
+# Changes here will be overwritten by Copier
+AskAdvancedQuestions: false
+AuthorEmail: abel.s.siqueira@gmail.com
+AuthorName: Abel Soares Siqueira
+JuliaMinVersion: '1.6'
+License: MPL-2.0
+PackageName: ReusWork
+PackageOwner: abelsiqueira
+PackageUUID: ba874941-c3a3-5202-a29f-58992f4597fa
+_commit: v0.3.2
+_src_path: /Users/abelsiqueira/projects/work/COPIERTemplate.jl
