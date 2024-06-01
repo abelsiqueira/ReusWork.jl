@@ -1,4 +1,4 @@
-name: Reusable test
+name: Test Pull Request
 
 on:
   pull_request:
