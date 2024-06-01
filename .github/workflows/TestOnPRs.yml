@@ -18,11 +18,9 @@ concurrency:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: abelsiqueira/ReusWork.jl/.github/workflows/ReusableTest.yml@main
-        with:
-          os: ubuntu-latest
-          version: "1"
-          arch: x64
-          allow_failure: false
+    uses: ./.github/workflows/ReusableTest.yml@main
+    with:
+      os: ubuntu-latest
+      version: "1"
+      arch: x64
+      allow_failure: false

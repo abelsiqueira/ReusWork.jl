@@ -14,14 +14,12 @@ concurrency:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: abelsiqueira/ReusWork.jl/.github/workflows/ReusableTest.yml@main
-        with:
-          os: ${{ matrix.os }}
-          version: ${{ matrix.version }}
-          arch: ${{ matrix.arch }}
-          allow_failure: ${{ matrix.allow_failure }}
+    uses: ./.github/workflows/ReusableTest.yml
+    with:
+      os: ${{ matrix.os }}
+      version: ${{ matrix.version }}
+      arch: ${{ matrix.arch }}
+      allow_failure: ${{ matrix.allow_failure }}
     strategy:
       fail-fast: false
       matrix:
