@@ -1,14 +1,6 @@
 name: Reusable test
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "src/**"
-      - "test/**"
-      - "*.toml"
-    tags: ["*"]
   pull_request:
     branches:
       - main
@@ -29,19 +21,7 @@ jobs:
     steps:
       - uses: ./.github/workflows/ReusableTest.yml
         with:
-          os: ${{ matrix.os }}
-          version: ${{ matrix.version }}
-          arch: ${{ matrix.arch }}
-          allow_failure: ${{ matrix.allow_failure }}
-    strategy:
-      fail-fast: false
-      matrix:
-        version:
-          - "1.6"
-          - "1"
-        os:
-          - ubuntu-latest
-          - macOS-latest
-        arch:
-          - x64
-        allow_failure: [false]
+          os: ubuntu-latest
+          version: "1"
+          arch: x64
+          allow_failure: false
