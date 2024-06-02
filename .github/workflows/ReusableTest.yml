@@ -1,4 +1,4 @@
-name: Reusable test
+name: Reusable est
 
 on:
   workflow_call:
@@ -32,7 +32,6 @@ jobs:
         with:
           version: ${{ inputs.version }}
           arch: ${{ inputs.arch }}
-
       - name: Use Julia cache
         uses: julia-actions/cache@v2
       - uses: julia-actions/julia-buildpkg@v1

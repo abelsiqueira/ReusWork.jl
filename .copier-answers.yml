@@ -1,11 +1,18 @@
 # Changes here will be overwritten by Copier
-AskAdvancedQuestions: false
+AddCodeOfConduct: true
+AddMacToCI: true
+AddWinToCI: false
+AskAdvancedQuestions: true
 AuthorEmail: abel.s.siqueira@gmail.com
 AuthorName: Abel Soares Siqueira
+Indentation: 2
 JuliaMinVersion: '1.6'
 License: MPL-2.0
 PackageName: ReusWork
 PackageOwner: abelsiqueira
 PackageUUID: ba874941-c3a3-5202-a29f-58992f4597fa
-_commit: v0.3.2
+RunJuliaNightlyOnCI: true
+TestPRsOnlyOneMachine: true
+UseCirrusCI: false
+_commit: v0.3.2-14-g7fb103a
 _src_path: /Users/abelsiqueira/projects/work/COPIERTemplate.jl
